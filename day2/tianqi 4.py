@@ -29,8 +29,8 @@ if menno=='2':
     info1=r.urlopen(address.format(city_pinyin)) .read().decode('utf-8','ignore')
 
 
-    import json1
-    data1=json1.loads(info1)
+    import json
+    data1=json.loads(info1)
     print("6月3日的天气为:"+str(data1["list"][2]['weather'][0]['description'])+";最高温度为:"+str(data1["list"][2]["main"]["temp_max"])+";最低温度为:"+str(data1["list"][2]["main"]["temp_min"])+";气压为:"+str(data1["list"][2]["main"]["pressure"]))
     print("6月4日的天气为:"+str(data1["list"][10]['weather'][0]['description'])+";最高温度为:"+str(data1["list"][8]["main"]["temp_max"])+";最低温度为:"+str(data1["list"][10]["main"]["temp_min"])+";气压为:"+str(data1["list"][10]["main"]["pressure"]))
     print("6月5日的天气为:"+str(data1["list"][18]['weather'][0]['description'])+";最高温度为:"+str(data1["list"][18]["main"]["temp"])+";最低温度为:"+str(data1["list"][18]["main"]["temp_min"])+";气压为:"+str(data1["list"][18]["main"]["pressure"]))
