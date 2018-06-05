@@ -13,7 +13,6 @@ print(msg["寄信人"])
 
 
 
-
 liuchen={"姓名":"刘晨","身高":"1.5米","性别":"男","年龄":"23" }
 print(liuchen["姓名"])
 print(liuchen["身高"])
