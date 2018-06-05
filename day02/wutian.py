@@ -12,7 +12,7 @@ if menno=='1':
     print("1.查看当前城市天气")
     import urllib.request as r
     city_pinyin=input("请输入城市拼音:")
-    address='http://api.openweathermap.org/data/2.5/weather?q=nanchong&mode=json&units=metric&lang=zh_cn&APPID=6a67ed641c0fda8b69715c43518b6996'
+    address='http://api.openweathermap.org/data/2.5/weather?q={}&mode=json&units=metric&lang=zh_cn&APPID=6a67ed641c0fda8b69715c43518b6996'
     info=r.urlopen(address.format(city_pinyin)) .read().decode('utf-8','ignore')
 
 
@@ -25,7 +25,7 @@ if menno=='2':
     print("2.查看某市连续五天天气")
     import urllib.request as r
     city_pinyin=input("请输入城市拼音:")
-    address='http://api.openweathermap.org/data/2.5/forecast?q=nanchong,cn&mode=json&lang=zh_cn&&APPID=6a67ed641c0fda8b69715c43518b6996&units=metric'
+    address='http://api.openweathermap.org/data/2.5/forecast?q={}&mode=json&lang=zh_cn&&APPID=6a67ed641c0fda8b69715c43518b6996&units=metric'
     info1=r.urlopen(address.format(city_pinyin)) .read().decode('utf-8','ignore')
 
 
